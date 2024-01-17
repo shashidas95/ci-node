@@ -3,7 +3,7 @@ name: Test and Merge Feature Branch
 on:
   push:
     branches:
-      - main
+      - master
       - feature1
       - feature2
       - feature3
