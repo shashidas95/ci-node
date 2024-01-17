@@ -34,7 +34,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Merge feature into main
+      - name: Merge feature into master
         run: |
           git merge --no-ff origin/feature1
          
