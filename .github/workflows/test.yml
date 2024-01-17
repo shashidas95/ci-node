@@ -36,5 +36,6 @@ jobs:
 
       - name: Merge feature into master
         run: |
+          git checkout master
           git merge --no-ff origin/feature1
          
