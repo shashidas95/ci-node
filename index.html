@@ -1,43 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-    <link rel="stylesheet" href="styles/calculator.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Unit</title>
+    <link rel="stylesheet" href="styles/calculator.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <input type="text" id="num1" placeholder="Enter number 1" />
+      <input type="text" id="num2" placeholder="Enter number 2" />
 
-  <!-- Add any additional stylesheets or meta tags as needed -->
-</head>
-<body>
-  <h1>Dashboard</h1>
-  
-  <!-- Calculator Unit -->
-  <div>
-    <h2>Calculator Unit</h2>
-    <!-- Add your calculator-related HTML elements here -->
-    <!-- For example, input fields, buttons, etc. -->
-    <script src="calculator.js"></script>
-  </div>
+      <button type="button" onclick="add()">Add</button>
+      <button type="button" onclick="subtract()">Subtract</button>
+      <button type="button" onclick="multiply()">Multiply</button>
+      <button type="button" onclick="divide()">Divide</button>
 
-  <!-- Weather App Unit -->
-  <div>
-    <h2>Weather App Unit</h2>
-    <!-- Add your weather app-related HTML elements here -->
-    <!-- For example, input fields, buttons, etc. -->
-    <script src="weather.js"></script>
-  </div>
+      <div id="result">Result: <span id="output">--</span></div>
+    </div>
 
-  <!-- BMI Calculator Unit -->
-  <div>
-    <h2>BMI Calculator Unit</h2>
-    <!-- Add your BMI calculator-related HTML elements here -->
-    <!-- For example, input fields, buttons, etc. -->
-    <script src="bmi.js"></script>
-  </div>
-
-  <!-- Add any additional sections or content as needed -->
-
-  <!-- Add any additional scripts or libraries as needed -->
-
-</body>
+    <script src="scripts/calculator.js"></script>
+    <script src="scripts/calculator-ui.js"></script>
+  </body>
 </html>
